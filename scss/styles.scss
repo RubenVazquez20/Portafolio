@@ -1,283 +1,278 @@
 * {
     margin: 0;
     padding: 0;
-    transition: 0.5s;
-    background-color: red($color: #000000);
 }
 
 body {
-    
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../img/img2.jpg);
-    background-size: cover; 
-    background-position: center;
-
-    .landing_princ {
-        height: 100vh;
-        width: 100vw;
-       
-
-        .text_princ{
-            background-color: #1f271b;
-            opacity: 0.6;
-            height: 100vh;
-            width: 50vw;
-            float: left;
-
-            .textos {
-                height: auto;
-                width: auto;
-                margin-top: 25%;
-                margin-bottom: 50%;
-                opacity: 1;
-
-                &>h2{
-                    text-align: center;
-                }
-
-                .yo {
-                    opacity: 1;
-                    height: 25vh;
-                    width: 25vh;
-                    background-image: url(../img/yo.jpg);
-                    background-size: cover; 
-                    background-position: center;
-                    border-radius: 100px;
-                    align-items: center;
-                    margin: auto auto 20px auto;
-                    z-index: 9999;
-
-                }
-
-                .nombre {
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                    font-size: 48px;
-                    font-weight: bold;
-                    color: #dbe9ee;
-                    font-weight: 700;
-                }
-
-                .edad {
-                    font-family: 'Roboto Condensed';
-                    font-size: 32px;
-                    color: #cbf7ed;
-                    font-weight: 900;
-                }
-
-                .nacimiento {
-                    font-family: 'Roboto Condensed';
-                    font-size: 20px;
-                    color: #87bba2;
-                    font-weight: 900;
-                    margin-top: 15px;
-                }
-
-                .lugar{
-                    font-family: 'Roboto Condensed';
-                    font-size: 20px;
-                    color: #87bba2;
-                    font-weight: 900;
-                }
-
-            }
-            
-        }
-
-        .img_princ{
-            background-color: #1f271b;
-            opacity: 0.6;
-            height: 100vh;
-            width: 50vw;
-            float: right;
-    
-                .textos2 {
-                    height: auto;
-                    width: auto;
-                    margin-top: 12%;
-                    margin-bottom: 5%;
-                    opacity: 1;
-    
-                    &>h2{
-                        text-align: center;
-                    }
-    
-    
-                    .about {
-                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        font-size: 38px;
-                        font-weight: bold;
-                        color: #cbb9a8;
-                        font-weight: 700;
-                    }
-    
-                    .info {
-                        font-family: 'Roboto Condensed';
-                        font-size: 15px;
-                        color: #dbe9ee;
-                        font-weight: 900;
-                        margin-top: 10px;
-                    }
-                
-                }
-
-                .contenedor {
-                    display: flex;
-                    justify-content: space-around;
-                  }
-                  
-                  .tarjeta {
-                    width: 300px;
-                    height: 400px;
-                    background-color: #124559;
-                    border-radius: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 20px;
-                    transition: transform 0.3s ease-in-out;
-
-                    &>h2 {
-                        color:#cbb9a8;
-                        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                    }
-
-                    .cont {
-                        display: flex;
-                        justify-content: space-between;
-                        margin-top: 7px;
-
-                        .div_img1{
-                            width: 50%;
-                            height: 60px;
-                            text-align: center;
-                            display:inline-block;
-                            
-                            /* background-color: #87bba2; */
-
-                            &>p {
-                                font-size: 12px;
-                                color: #ffffff;
-                            }
-    
-                            .img1{
-                                width: 30px;
-                                height: 30px;
-                                margin-top: 7px;
-
-                                /* &>p {
-                                    margin-left: 15px;
-                                    margin-bottom: 6px;
-                                    margin-right: 15px;
-                                    font-size: 12px;
-                                } */
-                            }
-    
-                        }
-    
-                    }
-
-                    &>h2{
-                        margin-top: 5px;
-                        margin-bottom: 15px;
-                        text-align: center;
-                        margin-left: 5px;
-                    }
-
-                    
-
-                    
-
-
-                  }
-                  
-                  .tarjeta:hover {
-                    transform: scale(1.1);
-                  }
-                  
-    
-                
-
-            
-        }
-
-        
-    }
-
-
     /* NavBar */
-    nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: auto;
-        background-color: transparent;
-        z-index: 9999;
-      }
-      
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      }
-      
-      nav li {
-        display: inline-block;
-        margin: 10px 40px;
-      }
-      
-      nav a {
-        display: block;
-        padding: 10px 0;
-        color: #fff;
-        text-decoration: none;
-        font-family: sans-serif;
-        font-size: 12px;
-        font-weight: bold;
-        text-transform: uppercase;
-        transition: all 0.3s ease-in-out;
-      }
-      
-      nav a:hover {
-        color: #f1c40f;
-      }
-      
-      @media only screen and (max-width: 768px) {
-        nav {
-          position: static;
-          background-color: #333;
+    &> nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 10px 20px;
+
+        .logo {
+          display: flex;
+          align-items: center;
+          margin-left: 2.5vw;
+          
+          &>a{
+
+
+            &>img{
+              width: 160px;
+            }
+          }
+
+          
         }
-        
-        nav ul {
-          display: block;
+
+        &> ul {
+          list-style: none;
           margin: 0;
           padding: 0;
           text-align: center;
+
+          &> li {
+            display: inline-block;
+            margin: 10px 40px;
+
+            &> a {
+              display: block;
+              padding: 10px 0;
+              color: #274C77;
+              text-decoration: none;
+              font-family: sans-serif;
+              font-size: 12px;
+              font-weight:bolder;
+              text-transform: uppercase;
+              transition: all 0.3s ease-in-out;
+            }
+
+            &> a:hover {
+              color: #f1c40f;
+            }
+          }
+        }
+    }
+
+
+    .background-image{
+
+      background-image: url("../img/central.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 73%;
+      position: absolute;
+
+      .title{
+        position: absolute;
+        bottom: 3.5vh;
+        left: 4vw;
+        color: #FFFFFF;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+      }
+    } 
+    
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0px;
+      margin-top: 78vh;
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3vh 2vh;
+
+        .col-md-6 {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+
+        .col-lg-6 {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+
+        #col{
+
+          &> a{
+
+            text-decoration: none;
+            color: inherit;
+  
+            .card {
+              position: relative;
+              height: 320px;
+              width: 100%;
+              overflow: hidden;
+  
+              .card-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                
+              }
+
+              #img1 {
+                background-image: url("../img/about2.webp");
+                background-size: cover;
+              }
+
+              #img2 {
+                background-image: url("../img/skills.webp");
+                background-size: cover;
+              }
+
+              #img3 {
+                background-image: url("../img/projects.webp");
+                background-size: cover;
+              }
+
+              #img4 {
+                background-image: url("../img/cv.webp");
+                background-size: cover;
+              }
+  
+              .card-title {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                padding: 20px;
+                color: white;
+                background-color: rgba(0,0,0,0.5);
+                width: 100%;
+                font-size: 20px;
+                text-align: left;
+                text-decoration: none;
+              }
+  
+              .card-title:hover {
+                color: #f1c40f;
+              }
+  
+            }
+  
+            .card:hover .card-title {
+              background-color: rgba(0,0,0,0.7);
+            }
+  
+          }
+  
+          a:hover {
+            text-decoration: none;
+          }
+
+        }
+
+        
+
+      }
+    }  
+    
+    
+    &> footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #ffffff;
+      border-top: 3px solid #f2f2f2;
+      height: 30vh;
+      width: 90vw;
+      margin: auto auto;
+
+      .left-side {
+        display: flex;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3vw;
+
+        .leftArriba {
+          margin-right: 4vw;
+          margin-bottom: 3vh;
+          margin-top: 3vh;
+
+          &> img {
+            width: 140px;
+          }
         }
         
-        nav li {
-          display: block;
-          margin: 0;
-        }
-        
-        nav a {
-          display: block;
-          padding: 10px 0;
-          color: #fff;
-          text-decoration: none;
+        .leftAbajo {
           font-size: 16px;
-          font-weight: bold;
-          text-transform: uppercase;
-          border-top: 1px solid #444;
-          transition: all 0.3s ease-in-out;
+          font-family:sans-serif;
         }
-        
-        nav a:hover {
-          color: #f1c40f;
-          background-color: #444;
-        }
+
+      }
+
+      .right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 3vw;
+
+        .rightArriba {
+          display: flex;
+          align-items: center;
+
+          margin-bottom: 5vh;
+
+          &> a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            background-color: #E8E8E8;
+            border-radius: 50%;
+            margin-right: 16px;
+            color: #333;
+          }
+
+          &> a:hover {
+            background-color: #333;
+            color: #fff;
+          }
+
+          &> p {
+            font-size: 15px;
+            margin:0 0 0 3vw;
+            text-decoration: none;
+            font-family: sans-serif;
+
+            &> a {
+              text-decoration: none;
+
+              &>i {
+                text-decoration: none;
+              }
+            }
+          }
+
+        } 
+
+        .rightAbajo {
+          font-size: 16px;
+          font-family:sans-serif;
+          text-align: right;
+        }      
+
       }
       
 
+    }
+    
+    
 
 }
