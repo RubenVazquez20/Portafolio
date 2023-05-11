@@ -1,11 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  /* NavBar */
-}
 body > nav {
   display: flex;
   justify-content: space-between;
@@ -34,33 +26,16 @@ body > nav > ul > li {
 body > nav > ul > li > a {
   display: block;
   padding: 10px 0;
-  color: #274C77;
+  color: #2A353D;
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bolder;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
 body > nav > ul > li > a:hover {
   color: #f1c40f;
-}
-body .background-image {
-  background-image: url("../img/central.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 73%;
-  position: absolute;
-}
-body .background-image .title {
-  position: absolute;
-  bottom: 3.5vh;
-  left: 4vw;
-  color: #FFFFFF;
-  font-size: 2em;
-  font-weight: bold;
-  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 body .container {
   max-width: 1320px;
@@ -71,7 +46,7 @@ body .container {
 body .container .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 3vh 2vh;
+  margin: 7vh 2vh;
 }
 body .container .row .col-md-6 {
   flex: 0 0 50%;
@@ -99,19 +74,19 @@ body .container .row #col > a .card .card-img {
   height: 100%;
 }
 body .container .row #col > a .card #img1 {
-  background-image: url("../img/about2.webp");
+  background-image: url("../../img/about2.webp");
   background-size: cover;
 }
 body .container .row #col > a .card #img2 {
-  background-image: url("../img/skills.webp");
+  background-image: url("../../img/skills.webp");
   background-size: cover;
 }
 body .container .row #col > a .card #img3 {
-  background-image: url("../img/projects.webp");
+  background-image: url("../../img/projects.webp");
   background-size: cover;
 }
 body .container .row #col > a .card #img4 {
-  background-image: url("../img/cv.webp");
+  background-image: url("../../img/cv.webp");
   background-size: cover;
 }
 body .container .row #col > a .card .card-title {
@@ -211,4 +186,4 @@ body > footer .right-side .rightAbajo {
   text-align: right;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=projects.css.map */
