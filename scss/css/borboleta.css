@@ -1,5 +1,12 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body > nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
@@ -37,107 +44,54 @@ body > nav > ul > li > a {
 body > nav > ul > li > a:hover {
   color: #f1c40f;
 }
-body .container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0px;
-}
-body .container .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 7vh 2vh;
-}
-body .container .row .col-md-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-body .container .row .col-lg-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-body .container .row #col > a {
-  text-decoration: none;
-  color: inherit;
-}
-body .container .row #col > a .card {
-  position: relative;
-  height: 320px;
-  width: 100%;
-  overflow: hidden;
-}
-body .container .row #col > a .card .card-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-body .container .row #col > a .card #img1 {
-  background-image: url("../../img/mind2.webp");
-  background-size: cover;
-}
-body .container .row #col > a .card #img2 {
-  background-image: url("../../img/clis.png");
-  background-size: cover;
-}
-body .container .row #col > a .card #img3 {
-  background-image: url("../../img/fetec.jpeg");
-  background-size: cover;
-}
-body .container .row #col > a .card #img4 {
+body .background-image {
   background-image: url("../../img/bor.png");
   background-size: cover;
-}
-body .container .row #col > a .card #img5 {
-  background-image: url("../../img/multi.png");
-  background-size: cover;
-}
-body .container .row #col > a .card #img6 {
-  background-image: url("../../img/churn.webp");
-  background-size: cover;
-}
-body .container .row #col > a .card #img7 {
-  background-image: url("../../img/redes.webp");
-  background-size: cover;
-}
-body .container .row #col > a .card #img8 {
-  background-image: url("../../img/sars.webp");
-  background-size: cover;
-}
-body .container .row #col > a .card #img9 {
-  background-image: url("../../img/c.webp");
-  background-size: cover;
-}
-body .container .row #col > a .card #img10 {
-  background-image: url("../../img/mas3.webp");
-  background-size: cover;
-}
-body .container .row #col > a .card .card-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  padding: 20px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
   width: 100%;
-  font-size: 20px;
+  height: 0;
+  padding-top: 40%; /* Ajusta la relación de aspecto de la imagen */
+  position: relative; /* Cambiado a relative */
+}
+body .background-image .title {
+  position: absolute;
+  bottom: 3.5vh;
+  left: 4vw;
+  color: #FFFFFF;
+  font-size: 3em;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+body .para {
+  display: flex;
+  margin: 6vh auto 5vh auto;
+  width: 40%;
+  border-bottom: 3px solid #f2f2f2;
+}
+body .para .titulito {
+  color: #2A353D;
+  text-align: center;
+  align-items: center;
+  margin: 10vh auto 5vh auto;
+  font-family: sans-serif;
+  font-size: 1.3em;
+  font-weight: 500px;
+}
+body .contenido {
+  margin: 5vh 30% 5vh 30%;
   text-align: left;
-  text-decoration: none;
+  font-family: sans-serif;
 }
-body .container .row #col > a .card .card-title:hover {
-  color: #f1c40f;
+body .para2 {
+  display: flex;
+  margin: 4vh auto 1vh auto;
+  width: 40%;
+  height: 10%;
 }
-body .container .row #col > a .card .card-description {
-  font-size: 14px;
-  color: #ffffff;
-  margin-top: 90px;
-}
-body .container .row #col > a .card:hover .card-title {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-body .container .row #col a:hover {
-  text-decoration: none;
+body .para2 .subtitulito {
+  color: #2A353D;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1em;
+  margin-top: 2px;
 }
 body > footer {
   display: flex;
@@ -149,6 +103,7 @@ body > footer {
   height: 30vh;
   width: 90vw;
   margin: auto auto;
+  margin-top: 5vh;
 }
 body > footer .left-side {
   display: flex;
@@ -194,7 +149,7 @@ body > footer .right-side .rightArriba > a {
 }
 body > footer .right-side .rightArriba > a:hover {
   background-color: #333;
-  color: #fff;
+  color: #f2f2f2;
 }
 body > footer .right-side .rightArriba > p {
   font-size: 15px;
@@ -214,4 +169,4 @@ body > footer .right-side .rightAbajo {
   text-align: right;
 }
 
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=borboleta.css.map */

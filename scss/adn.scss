@@ -59,21 +59,63 @@ body {
           }
         }
 
-    .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 100vh;
-        margin:auto auto;
-
-        &> iframe {
-            width: 100%;
-            height: 90%;
-            max-width: 100%;
-            max-height: 100%;
+        .background-image {
+          background-image: url("../../img/sars.webp");
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 0;
+          padding-top: 40%; /* Ajusta la relación de aspecto de la imagen */
+          position: relative; /* Cambiado a relative */
+        
+          .title {
+            position: absolute;
+            bottom: 3.5vh;
+            left: 4vw;
+            color: #FFFFFF;
+            font-size: 3em;
+            font-family:'Arial Narrow', Arial, sans-serif;
           }
+        }
+
+    .para{
+      display: flex;
+      margin: 6vh auto 5vh auto;
+      width: 40%;
+      border-bottom: 3px solid #f2f2f2;
+      
+      .titulito {
+        color: #2A353D;
+        text-align: center;
+        align-items: center;
+        margin: 10vh auto 5vh auto;
+        font-family: sans-serif;
+        font-size: 1.3em;
+        font-weight: 500px;
+      }
     }
+    
+    .contenido {
+      margin: 5vh 30% 5vh 30%;
+      text-align: left;
+      font-family: sans-serif;
+    }
+
+    .para2{
+      display: flex;
+      margin: 4vh auto 1vh auto;
+      width: 40%;
+      height: 10%;
+
+      .subtitulito {
+          color: #2A353D;
+          font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 1em;
+          margin-top: 2px;
+      }
+    }
+    
+    
 
     &> footer {
         display: flex;
@@ -138,7 +180,7 @@ body {
   
             &> a:hover {
               background-color: #333;
-              color: #fff;
+              color: #f2f2f2;
             }
   
             &> p {
