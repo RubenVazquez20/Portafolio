@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+body > nav .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5vw;
+}
+body > nav .logo > a > img {
+  width: 160px;
+}
+body > nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body > nav > ul > li {
+  display: inline-block;
+  margin: 10px 40px;
+}
+body > nav > ul > li > a {
+  display: block;
+  padding: 10px 0;
+  color: #2A353D;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+body > nav > ul > li > a:hover {
+  color: #f1c40f;
+}
+body .card-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+body .card-row .card {
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #2A353D;
+  transition: all 0.3s ease;
+}
+body .card-row .card .icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ccc;
+  text-align: left;
+}
+body .card-row .card .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #E8E8E8;
+  text-align: left;
+}
+body .card-row .card .description {
+  font-size: 14px;
+  color: #E8E8E8;
+  text-align: left;
+}
+body .card-row .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+body > footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 3px solid #f2f2f2;
+  height: 30vh;
+  width: 90vw;
+  margin: auto auto;
+  margin-top: 5vh;
+}
+body > footer .left-side {
+  display: flex;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+body > footer .left-side .leftArriba {
+  margin-right: 4vw;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+body > footer .left-side .leftArriba > img {
+  width: 140px;
+}
+body > footer .left-side .leftAbajo {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+body > footer .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 3vw;
+}
+body > footer .right-side .rightArriba {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+body > footer .right-side .rightArriba > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background-color: #E8E8E8;
+  border-radius: 50%;
+  margin-right: 16px;
+  color: #333;
+}
+body > footer .right-side .rightArriba > a:hover {
+  background-color: #333;
+  color: #fff;
+}
+body > footer .right-side .rightArriba > p {
+  font-size: 15px;
+  margin: 0 0 0 3vw;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+body > footer .right-side .rightArriba > p > a {
+  text-decoration: none;
+}
+body > footer .right-side .rightArriba > p > a > i {
+  text-decoration: none;
+}
+body > footer .right-side .rightAbajo {
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: right;
+}
+
+/*# sourceMappingURL=skills.css.map */
